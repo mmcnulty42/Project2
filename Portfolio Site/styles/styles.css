@@ -1,27 +1,50 @@
 
-li {display:block;  list-style-type:none; padding:10px; text-align:center; }
+ li {display:block;  list-style-type:none; padding:10px; text-align:center; }
+
 body {font-family: 'Roboto Mono', monospace;}
+
 * {box-sizing:border-box; }
+
 h1 {text-align:center;}
+
 img {width:300px; margin:auto;}
+
 .item {text-align:center;}
-.wrapper {text-align:center;}
+
+.wrapper {text-align:center; background-color: white;}
+
 .wrapper2 {text-align:center; }
+
 #contact {text-align:center; clear:both;}
+
 .clearfix::after {
     content: "";
     clear: both;
     display: table;
   }
-.div2 {text-align:center; margin:10px; color:red;}
-nav {text-align:center;}
-a {text-decoration:none; background-color:white;}
-.div3 {background-color:lightgrey; font-family: 'Ubuntu', sans-serif; }
-.l {text-align:center;}
-.ul {font-family: 'Ubuntu', sans-serif;}
-.name {font-family: 'Ubuntu', sans-serif;}
-@media (min-width:768px) {.item {width:50%; float:left; } li {display:inline;} 
-.matty { float:left; overflow:hidden; margin-left:75px;} 
- }
 
-@media (min-width:1024px) {.item {width:33%; float:left;}}
+  .div2 {text-align:center; margin:10px; color:red;}
+
+  nav {text-align:center;}
+
+  a {text-decoration:none; background-color:white;}
+
+  .div3 { font-family: 'Ubuntu', sans-serif; }
+
+  .l {text-align:center; display:inline;}
+
+  .ul {font-family: 'Ubuntu', sans-serif; padding-right:25px;}
+
+  .name {font-family: 'Ubuntu', sans-serif;}
+
+@media (min-width:320px) {.ulbreakpoint {display:none;} .contact{text-align:center;}}
+
+@media (min-width:768px) {.item {width:50%; float:left; } li {display:inline;} 
+.matty { float:right; overflow:hidden; margin-left:75px;} .contact {text-align:center;}
+ .l2 {display:none;} .ulbreakpoint {display:inline;}}
+
+@media (min-width:1024px) {.item {width:33%; float:left;} h1 {text-align:left;} 
+.matthew {margin-right:500px;} .contact {text-align:center;} #top {display:none;}
+.ulbreakpoint {display:inline;}
+.l2 {display:none;}
+}
